@@ -1,0 +1,9 @@
+
+@media only screen and (max-width: 768px) {
+    .switcher {
+        display: flex;
+        position: absolute;
+        top: 10%;
+        left: 1rem;
+    }
+  }

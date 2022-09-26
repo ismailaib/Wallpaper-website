@@ -67,6 +67,16 @@ rocketSelector.addEventListener("mouseleave", function () {
 });
 /*==================== MENU SHOW Y HIDDEN ====================*/
 
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 0);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "flex";
+}
 
 /*===== MENU SHOW =====*/
 /* Validate if constant exists */

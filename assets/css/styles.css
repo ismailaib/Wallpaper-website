@@ -162,11 +162,17 @@ img {
   background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
   width: 100%;
   height:100vh;
-  position: fixed;
 }
-
+.center {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
 .circles{
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -208,7 +214,6 @@ img {
   height: 20px;
   animation-delay: 4s;
 }
-
 .circles li:nth-child(4){
   left: 40%;
   width: 60px;
@@ -281,15 +286,20 @@ img {
 }
 .header {
   display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
 }
 
 .header h1 {
   color: white;
   font-size: 1.5rem;
   display: flex;
+  padding: 1rem 2rem 0rem 2rem;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: 500;
 }
 /*==================== NAV ====================*/
 
@@ -299,6 +309,7 @@ img {
   transform: rotateY(0);
   transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
   padding: 1rem 2rem 0rem 2rem;
+  position: fixed;
 }
 .burger__patty {
   width: 28px;
@@ -442,12 +453,6 @@ div.menu__brand--active {
   background: #1a1a1a;
   border-radius: 50%;
 }
-.header
-
-h1, h2, h3, p {
-  margin: 0;
-  font-weight: 400;
-}
 
 main {
   height: 100vh;
@@ -474,9 +479,9 @@ main h1 > a {
 /*--==================== TOOGLE SWITCH ====================*/
 .switcher {
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 1rem 2rem 0rem 2rem;
+  position: absolute;
+  top: 4%;
+  left: 2rem;
 }
 .switch {
     --width-of-switch: 3em;
@@ -536,8 +541,142 @@ input:checked + .slider:before {
 /*==================== HOME ====================*/
 
 
-/*==================== BUTTONS ====================*/
+#loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
 
+.loader div {
+  position: absolute;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+  animation: loader8435 1s ease-out infinite;
+}
+
+.loader div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+
+@keyframes loader8435 {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 64px;
+    height: 64px;
+    opacity: 0;
+  }
+}
+
+
+.main {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  height: 95vh;
+}
+
+/*==================== BoTTOm ====================*/
+.scrolldown {
+  --color: white;
+  --sizeX: 30px;
+  --sizeY: 50px;
+  position: relative;
+  width: var(--sizeX);
+  height: var(--sizeY);
+  margin-left: var(sizeX / 2);
+  border: calc(var(--sizeX) / 10) solid var(--color);
+  border-radius: 50px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  cursor: pointer;
+  position: relative;
+  top: 32%;
+}
+
+.scrolldown::before {
+  content: "";
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: var(--color);
+  border-radius: 100%;
+  animation: scrolldown-anim 2s infinite;
+  box-sizing: border-box;
+  box-shadow: 0px -5px 3px 1px #2a547066;
+}
+
+@keyframes scrolldown-anim {
+  0% {
+    opacity: 0;
+    height: 6px;
+  }
+
+  40% {
+    opacity: 1;
+    height: 10px;
+  }
+
+  80% {
+    transform: translate(0, 20px);
+    height: 10px;
+    opacity: 0;
+  }
+
+  100% {
+    height: 3px;
+    opacity: 0;
+  }
+}
+
+.chevrons {
+  padding: 6px 0 0 0;
+  margin-left: -3px;
+  margin-top: 48px;
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chevrondown {
+  margin-top: -6px;
+  position: relative;
+  border: solid var(--color);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+}
+
+.chevrondown:nth-child(odd) {
+  animation: pulse54012 500ms ease infinite alternate;
+}
+
+.chevrondown:nth-child(even) {
+  animation: pulse54012 500ms ease infinite alternate 250ms;
+}
+
+@keyframes pulse54012 {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.5;
+  }
+}
 
 /*==================== ABOUT ====================*/
 
