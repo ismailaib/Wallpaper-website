@@ -1,4 +1,10 @@
+/*==================== MEDIA QUERIES ====================*/
+/* For small devices */
+@media only screen and (max-width: 4px) {
 
+  }
+
+/* For medium devices */
 @media only screen and (max-width: 768px) {
     .switcher {
         display: flex;
@@ -7,3 +13,6 @@
         left: 1rem;
     }
   }
+
+/* For large devices */
+

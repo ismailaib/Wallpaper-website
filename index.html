@@ -14,16 +14,7 @@
         <title>Responsive Portfolio Website</title>
     </head>
 
-            <!--==================== loader ====================-->
-            <div class="loader" id="loader">
-              <div></div>
-              <div></div> 
-            </div>
-            
-              
-            
-          <div>
-    <body class="area" onload="myFunction()" " >
+    <body class="area" >
 
         <!--==================== BACKGROUND ====================-->
             <ul class="circles" >
@@ -39,11 +30,9 @@
                     <li></li>
             </ul>
 <!--==================== NAVBAR ====================-->
-  <header class="header" data-rocket id="myDiv" style="display:none;" id="myDiv">
-      <h1>
-        <img src="assets/img/logo.png" alt="">
-      </h1>
-      <div class="burger">
+  <header class="header" id="myDiv" >
+        <img id="img" src="assets/img/logo.png" alt="">
+      <div class="burger" onclick="myFunction()">
         <div class="burger__patty"></div>
         <div class="burger__patty"></div>
         <div class="burger__patty"></div>
@@ -56,7 +45,7 @@
                 <span class="slider"></span>
             </label>
         </div>
-          <a href=""><div class="logo"><img src="assets/img/me.png" alt="" data-rocket-image></div></a>
+          <a href=""><div class="logo"><img src="assets/img/me.png" alt=""></div></a>
         </div> 
         <ul class="menu__list">
           <li class="menu__item"><a href="" class="menu__link">Home</a></li>
@@ -66,14 +55,16 @@
         </ul>
       </nav>
     </header>
+
+
+    
 <!-------  mouse  -------->
-<section class="main">
-<div class="scrolldown">
+<div id="scrolldown" class="scrolldown">
     <div class="chevrons">
         <div class="chevrondown"></div>
         <div class="chevrondown"></div>
     </div>
-</div>
+
 
 
 </section>

@@ -152,7 +152,7 @@ img {
 
 .context h1{
   text-align: center;
-  color: #fff;
+  color: var(--container-color);
   font-size: 50px;
 }
 
@@ -289,10 +289,11 @@ img {
   justify-content: flex-end;
   align-items: center;
   flex-direction: row;
+  padding-top: 2rem;
 }
 
 .header h1 {
-  color: white;
+  color: var(--container-color);
   font-size: 1.5rem;
   display: flex;
   padding: 1rem 2rem 0rem 2rem;
@@ -300,6 +301,7 @@ img {
   justify-content: space-between;
   width: 100%;
   font-weight: 500;
+  position: fixed;
 }
 /*==================== NAV ====================*/
 
@@ -310,12 +312,15 @@ img {
   transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
   padding: 1rem 2rem 0rem 2rem;
   position: fixed;
+  background: #f0f8ff42;
+  height: 3rem;
+  border-radius: 1rem 0rem 0rem 1rem;
 }
 .burger__patty {
   width: 28px;
   height: 2px;
   margin: 0 0 4px 0;
-  background: white;
+  background: var(--container-color);
   transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .burger__patty:last-child {
@@ -382,9 +387,8 @@ img {
   font-size: 30px;
   padding: 15px 0;
   font-weight: 300;
-  color: white;
+  color: var(--container-color);
   text-decoration: none;
-  color: white;
   transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .menu__link:before {
@@ -394,7 +398,7 @@ img {
   left: 50%;
   width: 10px;
   height: 2px;
-  background: white;
+  background: var(--container-color);
   transform: translateX(-50%);
   transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -419,7 +423,11 @@ img {
 .menu .menu__item:nth-child(6) {
   transition-delay: 0.6s;
 }
-
+.header #img {
+  width: 3rem;
+  left: 18px;
+  position: fixed;
+}
 @media screen and (max-width: 768px) {
   ul.menu__list,
 div.menu__brand {
@@ -462,7 +470,7 @@ main {
   padding: 8vw;
 }
 main h1 > a {
-  color: white;
+  color: var(--container-color);
   text-decoration: none;
   font-size: 48px;
   font-weight: 300;
@@ -509,7 +517,7 @@ main h1 > a {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #f4f4f5;
+  background-color: var(--container-color);
   transition: .4s;
   border-radius: 30px;
 }
@@ -551,7 +559,7 @@ input:checked + .slider:before {
 
 .loader div {
   position: absolute;
-  border: 4px solid #ffffff;
+  border: 4px solid var(--container-color);
   border-radius: 50%;
   animation: loader8435 1s ease-out infinite;
 }
@@ -574,7 +582,6 @@ input:checked + .slider:before {
   }
 }
 
-
 .main {
   display: grid;
   align-items: center;
@@ -585,7 +592,7 @@ input:checked + .slider:before {
 
 /*==================== BoTTOm ====================*/
 .scrolldown {
-  --color: white;
+  --color: var(--container-color);
   --sizeX: 30px;
   --sizeY: 50px;
   position: relative;
@@ -598,7 +605,8 @@ input:checked + .slider:before {
   margin-bottom: 16px;
   cursor: pointer;
   position: relative;
-  top: 32%;
+  top: 70%;
+  left: 50%;
 }
 
 .scrolldown::before {
@@ -678,50 +686,38 @@ input:checked + .slider:before {
   }
 }
 
-/*==================== ABOUT ====================*/
+/*==================== ABOUT =====================*/
 
 
-/*==================== SKILLS ====================*/
+/*==================== SERVICES ==================*/
 
 
-/*==================== QUALIFICATION ====================*/
+/*==================== CONTACT ===================*/
 
-
-/*==================== SERVICES ====================*/
-
-
-/* Active Modal */
-
-
-/*==================== PORTFOLIO ====================*/
-
-
-/*==================== PROJECT IN MIND ====================*/
-
-
-/*==================== TESTIMONIAL ====================*/
-
-
-/*==================== CONTACT ME ====================*/
 
 
 /*==================== FOOTER ====================*/
 
 
-/*========== SCROLL UP ==========*/
+
+/*==================== SCROLL BAR ================*/
 
 
-/* Show scroll */
-
-
-/*========== SCROLL BAR ==========*/
-
-
-/*==================== MEDIA QUERIES ====================*/
-/* For small devices */
-
-
-/* For medium devices */
-
-
-/* For large devices */
+::-webkit-scrollbar-track
+ {
+   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+   background-color: #F5F5F5;
+ }
+ 
+::-webkit-scrollbar
+ {
+   width: 10px;
+   background-color: #F5F5F5;
+ }
+ 
+ ::-webkit-scrollbar-thumb
+ {
+   background-color: #4e54c8;
+   border: 2px solid #555555;
+ }
+ 
