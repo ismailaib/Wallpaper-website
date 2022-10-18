@@ -13,3 +13,5 @@
       ScrollReveal().reveal('.media-icons i', { delay: 300, origin: 'bottom', interval: 100 });
       ScrollReveal().reveal('.sec-02 .image, .sec-03 .image', { delay: 300, origin: 'top' });
       ScrollReveal().reveal('.media-info li', { delay: 300, origin: 'left', interval: 100 });
+
+
