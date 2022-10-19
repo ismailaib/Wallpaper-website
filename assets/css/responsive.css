@@ -1,11 +1,28 @@
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 600px) {
 
 }
 /* For medium devices */
-@media screen and (max-width: 768px) {
-    
+@media screen and (max-width: 880px) {
+    .main-title {
+        font-size: 2.5rem;
+        margin-bottom: 50px;
+    }
+    img {
+        width: 35rem;
+        display: block;
+      }
+      .content .image {
+        /* position: relative; */
+        width: 37rem;
+        display: flex;
+        height: 400px;
+        overflow: hidden;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 /* For large devices */
 @media screen and (max-width: 1024px) {
