@@ -27,6 +27,8 @@ body{
   background: #111222;
   user-select: none;
   overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
 }
 /* SKROLL BAR  */
 
@@ -57,6 +59,7 @@ section{
   align-items: center;
   padding: 80px 100px;
   color: #fff;
+  scroll-snap-align: start;
 }
 
 /* Shapes */
@@ -357,4 +360,25 @@ img {
     grid-column: unset;
     grid-row: unset;
   }
+}
+
+
+.details i {
+  color: #fff; 
+  width: 3rem;
+}
+
+.image-gallery .image-box .details .title a, .image-gallery .image-box .details .category a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10rem;
+  font-size: 1.5rem;
+  color: #fff;
 }
