@@ -12,9 +12,15 @@
         overflow: hidden;
         display: none;
     }
+    .sec-01,
+    .sec-02,
+    .scontainer,
+    .sec-04 {
+        display: none;
+    }
 }
 /* For large devices */
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1000px) {
     .content {
         position: relative;
         width: 1150px;
